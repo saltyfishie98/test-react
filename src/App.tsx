@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let index = 0;
+function App(): JSX.Element {
+	let outputList = ["Foo", "Bar"];
+	const [output, setOutput] = useState(outputList[0]);
+
+	return (
+		<div className="App">
+
+			<h1>{output}</h1>
+			<p>This is a test website</p>
+			<button onClick={() => {
+				index = (index + 1) % 2;
+				setOutput(outputList[index]);
+			}}>Press this!</button>
+
+		</div>
+	);
 }
 
 export default App;
