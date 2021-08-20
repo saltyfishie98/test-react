@@ -5,7 +5,7 @@ import "../App.scss";
 function Nav(): JSX.Element {
 	return (
 		<nav>
-			<Link to="/">
+			<Link to="/test-react">
 				<h3>Logo</h3>
 			</Link>
 			<ul>
