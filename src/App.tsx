@@ -12,7 +12,7 @@ function App(): JSX.Element {
 			<div className="App">
 				<Nav />
 				<Switch>
-					<Route path="/" exact component={Home} />
+					<Route path="/test-react" component={Home} />
 					<Route path="/About" component={About} />
 					<Route path="/Contact" component={Contact} />
 				</Switch>
