@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./nav.scss";
 import { Dimensions, WindowDims } from "../helper/ScreenSize";
 
-const bound = 470;
+const bound = 520;
 
 function showPageLink(limit: number, path: string): JSX.Element {
 	let visibility;
@@ -39,7 +39,7 @@ function Nav(): JSX.Element {
 			<div className="container">
 				<Link className="Logo" to="/test-react">
 					<h3>
-						This<span>Logo</span>
+						This.<span>Logo</span>
 					</h3>
 				</Link>
 

@@ -27,9 +27,14 @@ $logocolor1: rgb(30, 138, 87);
 		list-style-type: none;
 
 		li {
+			font-size: 1.4em;
 			color: black;
 			float: right;
-			padding: 0 1.5em 0 1.5em;
+			margin: 0 1.5em 0 1.5em;
+		}
+
+		li:hover {
+			font-weight: bold;
 		}
 
 		.pageLink {

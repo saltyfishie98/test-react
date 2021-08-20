@@ -4,7 +4,7 @@ import { useState } from "react";
 let index = 0;
 function Home(): JSX.Element {
 	let outputList = ["Home", "Page"];
-	const [output, setOutput] = useState(outputList[0]);
+	const [output, setOutput] = useState(outputList[index]);
 
 	return (
 		<section className="Home">
