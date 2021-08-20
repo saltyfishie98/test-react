@@ -1,23 +1,23 @@
-import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import "./App.scss";
-import { useState } from "react";
+import Nav from "./Pages/nav";
+import About from "./Pages/about";
+import Contact from "./Pages/contact";
+import Home from "./Pages/home";
 
-let index = 0;
 function App(): JSX.Element {
-	let outputList = ["Foo", "Bar"];
-	const [output, setOutput] = useState(outputList[0]);
-
 	return (
-		<div className="App">
-
-			<h1>{output}</h1>
-			<p>This is a test website</p>
-			<button onClick={() => {
-				index = (index + 1) % 2;
-				setOutput(outputList[index]);
-			}}>Press this!</button>
-
-		</div>
+		<Router>
+			<div className="App">
+				<Nav />
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/About" component={About} />
+					<Route path="/Contact" component={Contact} />
+				</Switch>
+			</div>
+		</Router>
 	);
 }
 
