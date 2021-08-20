@@ -1,4 +1,4 @@
-import "../App.scss";
+import "./home.scss";
 import { useState } from "react";
 
 let index = 0;
@@ -7,18 +7,23 @@ function Home(): JSX.Element {
 	const [output, setOutput] = useState(outputList[0]);
 
 	return (
-		<div className="Home">
+		<section className="Home">
+			<div className="container">
+				<h1 className="mainTitle">{output}</h1>
 
-			<h1>{output}</h1>
+				<p>This is a test website</p>
 
-			<p>This is a test website</p>
-
-			<button onClick={() => {
-				index = (index + 1) % 2;
-				setOutput(outputList[index]);
-			}}>Press this!</button>
-
-		</div>
+				<button
+					className="myButton"
+					onClick={() => {
+						index = (index + 1) % 2;
+						setOutput(outputList[index]);
+					}}
+				>
+					Press this!
+				</button>
+			</div>
+		</section>
 	);
 }
 

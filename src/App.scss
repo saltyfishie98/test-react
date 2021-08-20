@@ -1,23 +1,9 @@
 @import "./sharedVariables";
 
-.App {
-	text-align: center;
-	color: $accentColor;
-}
-
-nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 10vh;
-	background-color: rgb(161, 161, 161);
-	color: #000;
-
-	ul {
-		width: 30%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		list-style: none;
-	}
+ul,
+p,
+h1,
+h2,
+h3 {
+	margin: 0;
 }

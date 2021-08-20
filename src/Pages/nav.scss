@@ -1,0 +1,46 @@
+@import "../sharedVariables";
+
+$logocolor0: rgb(44, 43, 43);
+$logocolor1: rgb(30, 138, 87);
+
+.navbar {
+	background-color: $accentColor;
+	padding: $cardPadding;
+
+	/////////////////////////////
+	.Logo {
+		text-decoration: none;
+		color: $logocolor0;
+
+		h3 {
+			text-align: center;
+			font-size: 2rem;
+		}
+
+		span {
+			color: $logocolor1;
+		}
+	}
+
+	/////////////////////////////
+	ul {
+		list-style-type: none;
+
+		li {
+			color: black;
+			float: right;
+			padding: 0 1.5em 0 1.5em;
+		}
+
+		.pageLink {
+			text-decoration: none;
+		}
+	}
+
+	/////////////////////////////
+	.container {
+		align-items: center;
+		display: flex;
+		place-content: space-between;
+	}
+}

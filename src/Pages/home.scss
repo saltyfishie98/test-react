@@ -1,0 +1,19 @@
+@import "../sharedVariables";
+
+.Home {
+	background-color: gray;
+	text-align: center;
+
+	.mainTitle {
+		font-size: 5em;
+		padding: 0.5em 0 0.5em 0;
+	}
+
+	p {
+		padding: 0.5em 0 0.5em 0;
+	}
+
+	button {
+		margin: 1em 0 5em 0;
+	}
+}
